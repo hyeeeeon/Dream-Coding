@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <!-- 문서의 언어 지정 (다국어 웹페이지 개발) -->
+    <head>
+        <meta charest="UTF-8">
+        <meta name ="view point" content ="width=device-width, initial-scale=1.0" />
+        <!-- 웹페이지가 모바일에서도 정확하게 표시되기위해 사용  -->
+    <title>Window size</title>
+    <style>
+        .tag {
+            display : inline-block;
+            background-color : thistle;
+            padding : 16px;
+            margin-top : 16px;
+            font-size : 48px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class = "tag"> Window Size </div>
+    <script>
+        function updateTag(){
+        const tag = document.querySelector('.tag');
+            tag.innerHTML = `
+            window.screen: ${window.screen.width}, ${window.screen.height} <br/>
+            window.outer: ${window.outerWidth}, ${window.outerHeight} <br/>
+            window.inner: ${window.innerWidth}, ${window.innerHeight} <br/>
+            documentElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight} <br/>
+            `;
+        }
+         
+    // <script>
+    // window.addEventListener ('resize', function() {
+    // console.log ('resize');
+    // });
+    // </scri..> 코드를 밑 코드로 변경 
+            
+            window.addEventListener(`resize`, () => {
+                updateTag();
+        });
+        updateTag();
+    </script>
+    </body>
+</html>
+

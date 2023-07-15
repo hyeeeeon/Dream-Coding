@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+img{
+    display: center;
+    margin: auto;
+}
+
+button {
+    outline: none;
+    background-color: palevioletred;
+    color : white;
+    font-size: 25px;
+    margin : 16px 0;
+    cursor: pointer;
+}
