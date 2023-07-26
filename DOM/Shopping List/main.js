@@ -63,6 +63,9 @@ all_delete.onclick = () => {
 
 //Enter 눌렸을 떄 입력
 input.addEventListener('keydown', event => {
+     if (event.isComposing){
+        return;
+    }
     if (event.key === 'Enter') {
         onAdd();
     }
