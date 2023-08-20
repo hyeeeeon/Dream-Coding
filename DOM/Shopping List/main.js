@@ -34,7 +34,7 @@ function creatItem(text){
     
     const deleteBtn = document.createElement('button');
     deleteBtn.setAttribute('class', 'item_delete');
-    deleteBtn.innerHTML = '⊖';
+    deleteBtn.innerHTML = '☑️';
     deleteBtn.addEventListener('click', () => {
     items.removeChild(itemRow);
     });
