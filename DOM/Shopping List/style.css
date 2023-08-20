@@ -23,6 +23,7 @@ ul {
 .header {
     height: 35px;
     padding: 7px;
+    padding_bottom: 10px;
     background-color: darkgray;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -38,12 +39,14 @@ ul {
 .item{
     display: flex;
     justify-content: space-between;
-    padding: 8px 32px;
+    padding: 7px 32px;
+    padding_top: 12px;
+    justify-content: space-between;
 }
 
  .item_row{
     border-bottom: 0.5px solid;
-    margin: 8px;
+    margin: 5px;
  }
  
  .item_delete{
@@ -74,7 +77,7 @@ ul {
     height: 25px;
     border: none;
     outline: none;
-    font-size: 18px;
-    padding: 0 12px;
+    font-size: 16px;
+    padding: 0 8px;
 
 }
